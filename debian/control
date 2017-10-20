@@ -1,0 +1,27 @@
+Source: golang-github-cespare-xxhash
+Section: devel
+Priority: extra
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Alexandre Viau <aviau@debian.org>
+Build-Depends: debhelper (>= 10),
+               dh-golang,
+               golang-any,
+               golang-github-oneofone-xxhash-dev,
+               golang-github-spaolacci-murmur3-dev
+Standards-Version: 3.9.8
+Homepage: https://github.com/cespare/xxhash
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/golang-github-cespare-xxhash.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-go/packages/golang-github-cespare-xxhash.git
+XS-Go-Import-Path: github.com/cespare/xxhash
+
+Package: golang-github-cespare-xxhash-dev
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         golang-github-oneofone-xxhash-dev,
+         golang-github-spaolacci-murmur3-dev
+Description: implementation of the 64-bit xxHash algorithm (XXH64)
+ xxhash is a Go implementation of the 64-bit xxHash
+ (http://cyan4973.github.io/xxHash/) algorithm, XXH64. This is a
+ high-quality hashing algorithm that is much faster than anything in the
+ Go standard library.

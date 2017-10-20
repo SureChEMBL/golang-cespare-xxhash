@@ -1,0 +1,5 @@
+golang-github-cespare-xxhash (0.0~git20170604.0.1b6d2e4-1) unstable; urgency=medium
+
+  * Initial release (Closes: #865077)
+
+ -- Alexandre Viau <aviau@debian.org>  Mon, 19 Jun 2017 01:25:51 -0400
